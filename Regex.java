@@ -57,8 +57,16 @@ import java.util.regex.Pattern;
             }
         }
         public void validatePwd3(String pwd3) {
-            Pattern p = Pattern.compile("^(?=.*[A-Z])[A-Za-z0-9]{8,}");
+            Pattern p = Pattern.compile("^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}");
             Matcher m = p.matcher(pwd3);
+            boolean b = m.matches();
+            if (b == false) {
+                System.out.println("Enter the right password");
+            }
+        }
+        public void validatePwd4(String pwd4) {
+            Pattern p = Pattern.compile("^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_])[A-Za-z0-9!@#$%^&*]{8,}");
+            Matcher m = p.matcher(pwd4);
             boolean b = m.matches();
             if (b == false) {
                 System.out.println("Enter the right password");
