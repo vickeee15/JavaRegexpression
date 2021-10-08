@@ -20,6 +20,9 @@ public class MainClass {
         System.out.println("enter your password");
         String pwd = sc.nextLine();
         validate.validatePassword(pwd);
+        System.out.println("enter your password");
+        String pwd2 = sc.nextLine();
+        validate.validatePwd2(pwd);
 
 }
 }
