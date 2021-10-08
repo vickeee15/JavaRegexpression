@@ -10,7 +10,10 @@ public class MainClass {
     validate.validateName(fname);
     System.out.println("enter last name");
     String lname = sc.nextLine();
-    validate.validateName(lname);
+    validate.validateLName(lname);
+    System.out.println("enter your email");
+    String mail = sc.nextLine();
+    validate.validateMail(mail);
 
 }
 }
