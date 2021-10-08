@@ -20,6 +20,14 @@ import java.util.regex.Pattern;
                     System.out.println("name must start with capital and has minimum 3 letter");
                 }
         }
+        public void validateMail(String mail){
+            Pattern p = Pattern.compile("^[a-z0-9_.]+@[a-z]{2,}+.[a-z.]{2,}$");
+            Matcher m = p.matcher(mail);
+            boolean b= m.matches();
+            if(b==false){
+                System.out.println("Check the mail");
+            }
+        }
 
 
     }
