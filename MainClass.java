@@ -22,7 +22,10 @@ public class MainClass {
         validate.validatePassword(pwd);
         System.out.println("enter your password");
         String pwd2 = sc.nextLine();
-        validate.validatePwd2(pwd);
+        validate.validatePwd2(pwd2);
+        System.out.println("enter your password");
+        String pwd3 = sc.nextLine();
+        validate.validatePwd3(pwd3);
 
 }
 }
