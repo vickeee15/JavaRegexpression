@@ -26,6 +26,9 @@ public class MainClass {
         System.out.println("enter your password");
         String pwd3 = sc.nextLine();
         validate.validatePwd3(pwd3);
+        System.out.println("enter your password");
+        String pwd4 = sc.nextLine();
+        validate.validatePwd4(pwd4);
 
 }
 }
