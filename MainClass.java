@@ -16,7 +16,10 @@ public class MainClass {
     validate.validateMail(mail);
     System.out.println("enter your mobile number");
     String num = sc.nextLine();
-    validate.validateMail(num);
+    validate.validateNum(num);
+        System.out.println("enter your password");
+        String pwd = sc.nextLine();
+        validate.validatePassword(pwd);
 
 }
 }
